@@ -23,7 +23,7 @@ describe("Lists", () => {
 
   // it('remove "Testing1 - Watching Movie"', async () => {
   //   render(<App />);
-  //   const labellabel = await screen.findByLabelText("yeyeye");
+  //   const labellabel = await screen.findByLabelText("testRemoving");
   //   console.log(labellabel);
   //   // const deleteButton = await screen.findByTestId(getDeleteId);
   //   fireEvent.click(labellabel);

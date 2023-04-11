@@ -15,7 +15,7 @@ Open the terminal, then follow the procedures below.
 - Go to the client directory on your terminal and run 'yarn start', then it runs on port 3000, so you can see UI of app.
 - Change the value on /server/db.js file. "user" should be the name which you set up on Postgres when you installed it. If you already set up the password, enter the password too.
 - Excecute 'brew services start postgresql' on the terminal to activate using database. If you want to quit service of database,excecute 'brew services stop postgresql'
-- Go to the client directory on your terminal and run 'yarn start' to run the server.
+- Go to the server directory on your terminal and run 'yarn start' to run the server.
  
 
 <br>
