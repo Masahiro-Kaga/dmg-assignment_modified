@@ -17,6 +17,7 @@ const InputTodo: React.FC<InterfaceProps> = ({ addTodo }) => {
       <form className="d-flex mt-5" onSubmit={onSubmitForm}>
         <input
           type="text"
+          aria-label="todo"
           onChange={(e) => setTodoText(e.target.value)}
           className="form-control"
           value={todoText}

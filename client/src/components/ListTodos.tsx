@@ -29,7 +29,7 @@ const ListTodos: React.FC<InterfaceProps> = ({ todos, deleteTodo, updateTodo }) 
         {todos.map((todo) => (
           <tr key={todo.todo_id}>
             <td>{todo.todo_id}</td>
-            <td>{todo.description}</td>
+            <td data-testid={`todo-${todo.description}`}>{todo.description}</td>
             <td>
               <EditTodo todo={todo} updateTodo={updateTodo}></EditTodo>
             </td>
