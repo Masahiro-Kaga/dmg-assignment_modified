@@ -37,10 +37,14 @@ function App() {
       alert("There is the same Todo. Impossible to register same Todo.");
       return;
     }
-    const response = await axios.post("http://localhost:4000/todos", {
-      description: todo,
-    });
-    setTodos(response.data);
+    try{
+      const response = await axios.post("http://localhost:4000/todos", {
+        description: todo,
+      });
+      setTodos(response.data);
+    }catch(err){
+      console.log(err);
+    }
   };
 
   const deleteTodo = async (id: number): Promise<void> => {

@@ -1,6 +1,6 @@
 CREATE DATABASE todoDatabase;
 
-CREATE TABLE todoList(
+CREATE TABLE todos(
     todo_id SERIAL PRIMARY KEY,
     description VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
